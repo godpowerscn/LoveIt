@@ -1,4 +1,5 @@
 {{ template "_internal/google_analytics.html" . }}
+{{ partialCached "hugomods/umami-analytics/index" . .Params.analyze }}
 
 {{- /* Desktop header */ -}}
 <header class="desktop" id="header-desktop">
